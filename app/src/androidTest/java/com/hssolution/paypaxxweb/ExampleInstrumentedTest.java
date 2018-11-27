@@ -1,4 +1,4 @@
-package com.hssolution.paodiariolite;
+package com.hssolution.paypaxxweb;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.hssolution.paodiariolite", appContext.getPackageName());
+        assertEquals("com.hssolution.paypaxxweb", appContext.getPackageName());
     }
 }

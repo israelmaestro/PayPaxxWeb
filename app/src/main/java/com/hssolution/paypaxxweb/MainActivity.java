@@ -1,5 +1,6 @@
-package com.hssolution.paodiariolite;
+package com.hssolution.paypaxxweb;
 
+import android.annotation.SuppressLint;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -13,14 +14,17 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
+import com.hssolution.paypaxxweb.R;
+
 public class MainActivity extends AppCompatActivity {
 
+    @SuppressLint("SetJavaScriptEnabled")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        String url = "https://paodiario.org/hoje/";
-        WebView view = (WebView)this.findViewById(R.id.simpleWebView);
+        String url = "https://meuscartoes.paypaxx.com.br";
+        WebView view = this.findViewById(R.id.simpleWebView);
         view.getSettings().setJavaScriptEnabled(true);
         view.loadUrl(url);
         view.setWebViewClient(new MyBrowser());

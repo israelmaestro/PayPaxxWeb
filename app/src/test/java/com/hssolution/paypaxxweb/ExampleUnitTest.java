@@ -1,4 +1,4 @@
-package com.hssolution.paodiariolite;
+package com.hssolution.paypaxxweb;
 
 import org.junit.Test;
 
